@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+.left-side{
+    flex:1.1;
+    background-color: aquamarine;
+}
+.right-side{
+    flex:2;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 40px;
+}
+/* .description , .form-container , .create-button, #alr-account {
+    margin:auto 40px;
+} */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 40px;
+    border: 2px solid black;
+    margin: auto;
+}
+h3 {
+    font-size: clamp(1.5rem, 2vw, 4rem);
+}
+h4{
+    font-size: clamp(1.3rem, 1.6vw, 3rem);
+}
+label {
+    display: block;
+}
