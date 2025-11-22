@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <div class="left-side"></div>
+    <div class="left-side">
+        <img src="premium_photo-1674006609166-b5f9b070b669.avif" alt="green plant">
+        <div class="text-container">
+            <h5 id="author">Taken by Giulia Squillace</h5>
+        </div>
+    </div>
     <div class="right-side">
         <div class="content">
         <div class="description">
-            <h3 lass="title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h3>
+            <h3 class="title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hellasi imana kurwa wanek , sit malakase unn </h3>
             <h4 class="quote">Be a part of our team</h4>
-        </div>
         <div class="form-container">
-            <h2 id="text">this is the form you need to fill out</h2>
+            <!-- <h2 id="text">this is the form you need to fill out</h2> -->
             <form action="/my-handling-form-page" method="post">
                 <p>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" />
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" required placeholder="" id="first-name" name="user_name" />
                 </p>
                 <p>
-                    <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="user_email" />
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" required placeholder=""  id="last-name" name="user_surname" />
                 </p>
                 <p>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
+                    <label for="mail">EMAIL</label>
+                    <input type="email" required placeholder=""  id="mail" name="user_email" />
+                </p>
+                <p>
+                    <label for="number">PHONE NUMBER</label>
+                    <input type="text" required placeholder=""  id="number" name="user_number" />
+                </p>
+                <p>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" required placeholder=""  id="password" name="user_pass" />
+                </p>
+                <p>
+                    <label for="password">CONFIRM PASSWORD</label>
+                    <input type="password" required placeholder=""  id="password" name="user_confirm_pass" />
                 </p>
             </form>
+        </div>
         </div>
         <div class="create-button">Create Account</div>
         <p id="alr-account">Already have an account? <a href="index.html">Log in</a></p>

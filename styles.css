@@ -1,19 +1,54 @@
+.montserrat-form-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
     display: flex;
     height: 100vh;
+    margin: 0;
+    font-family: Montserrat;
 }
 .left-side{
-    flex:1.1;
+    width: 35vw;
+    flex:1 auto;
     background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+#author{
+    position: absolute;
+    bottom: 10px;      /* Distance from the bottom edge of the container */
+    left: 50%;         /* Starts the text 50% from the left */
+    transform: translateX(-50%);
+    
+    color: white;
 }
 .right-side{
-    flex:2;
-    background-color: antiquewhite;
+    width: 65vw;
+    flex:1 auto;
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
     gap: 40px;
+    
+}
+.title {
+    max-width: 85%;
 }
 /* .description , .form-container , .create-button, #alr-account {
     margin:auto 40px;
@@ -24,15 +59,70 @@ body {
     justify-content: center;
     align-items: baseline;
     gap: 40px;
-    border: 2px solid black;
-    margin: auto;
+    /* border: 2px solid black; */
+    margin: auto 40px;
+    padding-right: 40px;
+    
+    
+}
+.description {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }
 h3 {
-    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-size: clamp(1.9rem, 2.2vw, 3.5rem);
 }
 h4{
-    font-size: clamp(1.3rem, 1.6vw, 3rem);
+    font-size: clamp(1.6rem, 1.8vw, 2.8rem);
 }
 label {
     display: block;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: clamp(2rem, 3vw, 6rem);
+    row-gap: 2rem;
+    width: 90%;
+    /* min-width: 598px; */
+    max-width: 800px;
+    margin-bottom: 28px;
+    padding-right: 20px;
+    
+}
+label {
+    font-size: 18px;
+}
+input{
+    height: 28px;
+    width: 240px;
+    border-radius: 4px;
+
+}
+input:valid:not(:placeholder-shown) {
+    border: 2px solid green;
+    transition: border-color 0.3s ease;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 2px solid red;
+    transition: border-color 0.3s ease;
+}
+input:focus{
+    border: 2px solid rgb(60, 60, 228);
+    transition: border-color 0.3s ease;
+}
+.create-button {
+    height: 60px;
+    width: 220px;
+    background-color: rgb(71 131 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    font-size: 24px;
+}
+#alr-account{
+    font-size: 20px;
 }
