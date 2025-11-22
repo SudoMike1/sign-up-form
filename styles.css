@@ -22,6 +22,23 @@ body {
     position: relative;
     
 }
+#icon-background{
+    position: absolute;
+    /* Positions it at the top-left corner of the parent (.left-side) */
+    top: 20%;
+    
+    /* Ensures it covers the entire width and height of the parent */
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+}
 img {
     flex-shrink: 0;
     min-width: 100%;
@@ -33,18 +50,24 @@ img {
     bottom: 10px;      /* Distance from the bottom edge of the container */
     left: 50%;         /* Starts the text 50% from the left */
     transform: translateX(-50%);
+    color: white;
     
+
+}
+.author-link:link, .author-link:visited{
     color: white;
 }
 .right-side{
     width: 65vw;
     flex:1 auto;
-    background-color: aliceblue;
+    background-color: rgb(242, 245, 248);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
     gap: 40px;
+    margin-top: max(20px, auto);
+    margin-bottom: max(20px, auto);
     
 }
 .title {
@@ -60,20 +83,29 @@ img {
     align-items: baseline;
     gap: 40px;
     /* border: 2px solid black; */
-    margin: auto 40px;
+    margin-left:  40px;
+    margin-right: 40px;
     padding-right: 40px;
+
     
     
 }
 .description {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
+    background-color: white
 }
 h3 {
     font-size: clamp(1.9rem, 2.2vw, 3.5rem);
 }
 h4{
     font-size: clamp(1.6rem, 1.8vw, 2.8rem);
+    margin-bottom: 5px;
+}
+h5 {
+    color: grey;
+    opacity: 0.7;
+    font-size: 18px;
 }
 label {
     display: block;
@@ -101,20 +133,21 @@ input{
 }
 input:valid:not(:placeholder-shown) {
     border: 2px solid green;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.6s ease;
 }
 
 input:invalid:not(:placeholder-shown) {
     border: 2px solid red;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.6s ease;
 }
 input:focus{
+    outline: none;
     border: 2px solid rgb(60, 60, 228);
-    transition: border-color 0.3s ease;
+    transition: border-color 0.6s ease;
 }
 .create-button {
-    height: 60px;
-    width: 220px;
+    height: 66px;
+    width: 240px;
     background-color: rgb(71 131 71);
     display: flex;
     justify-content: center;
@@ -122,6 +155,9 @@ input:focus{
     border-radius: 8px;
     color: white;
     font-size: 24px;
+}
+.create-button:hover{
+    cursor: pointer;
 }
 #alr-account{
     font-size: 20px;
