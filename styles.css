@@ -97,10 +97,12 @@ img {
 }
 h3 {
     font-size: clamp(1.9rem, 2.2vw, 3.5rem);
+    font-weight: 600;
 }
 h4{
     font-size: clamp(1.6rem, 1.8vw, 2.8rem);
-    margin-bottom: 5px;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 h5 {
     color: grey;
